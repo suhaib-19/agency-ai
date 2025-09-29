@@ -7,8 +7,8 @@ const ServiceCard = ({ service, index }) => {
     const [visible, setVisible] = useState(false);
     const divRef = useRef(null)
     const handleMouseMove = (e) => {
-        const bounds = divRef.current.getBoundingClientRect();
-        setPosition({ x: e.clientX - bounds.left, y: e.clientY - bounds.top })
+        const bounds = divRef.current.getBoundingClientRect(); 
+        setPosition({ x: e.clientX - bounds.left, y: e.clientY - bounds.top });
     }
     return (
         <motion.div
